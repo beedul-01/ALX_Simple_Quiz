@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
 const feedback = document.getElementById("feedback");
 const submit_answer =  document.getElementById("submit-answer");
-function checkanswer() {
+function checkAnswer() {
    
     let correctanswer = "4";
     let ans = document.querySelector('input[name="quiz"]:checked');
@@ -17,7 +17,7 @@ function checkanswer() {
 
 };
 
-submit_answer.addEventListener('submit',checkanswer);
+submit_answer.addEventListener('submit',checkAnswer);
 });
 
 
