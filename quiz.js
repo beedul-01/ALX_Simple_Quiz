@@ -4,11 +4,11 @@ const feedback = document.getElementById("feedback");
 const submit_answer =  document.getElementById("submit-answer");
 function checkAnswer() {
    
-    let correctanswer = "4";
-    let ans = document.querySelector('input[name="quiz"]:checked');
-    let useranswer = ans.value;
+    let correctAnswer = "4";
+    let selectedAnswer = document.querySelector('input[name="quiz"]:checked');
+    let userAnswer = selectedAnswer.value;
 
-    if (correctanswer===useranswer){
+    if (correctAnswer===userAnswer){
         feedback.textContent = "Correct! Well done." ;
     }
     else{
